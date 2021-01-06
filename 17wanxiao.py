@@ -352,7 +352,7 @@ def run():
     initLogging()
     now_time = datetime.datetime.now()
     bj_time = now_time + datetime.timedelta(hours=8)
-    test_day = datetime.datetime.strptime('2020-12-26 00:00:00', '%Y-%m-%d %H:%M:%S')
+    test_day = datetime.datetime.strptime('2021-01-13 00:00:00', '%Y-%m-%d %H:%M:%S')
     date = (test_day - bj_time).days
     log_info = [f"""
 ------
@@ -391,7 +391,7 @@ def run():
 ```
 {check['res']}
 ```""")
-    log_info.append(f"""### ⚡考研倒计时:
+    log_info.append(f"""### ⚡放假倒计时:
 ```
 {date}天
 ```
